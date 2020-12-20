@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    open-in-view: false
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    hikari:
+      jdbc-url: "jdbc:h2:mem:testdb"
+      username: "test"
+      driver-class-name: "org.h2.Driver"
+
+  mvc:
+    view:
+      suffix: .html
